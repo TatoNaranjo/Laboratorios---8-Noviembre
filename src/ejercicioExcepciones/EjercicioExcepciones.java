@@ -12,7 +12,7 @@ public class EjercicioExcepciones {
         Scanner sc = new Scanner(System.in);
 
         
-        //si el numero ingresado es menor a 10 ponemos nuestra propia excepción
+       
       
         try{
             //Ingresa el Entero a dividir.
@@ -29,12 +29,13 @@ public class EjercicioExcepciones {
             //Imprimimos las respuestas
             System.out.println("La respuesta es: "+ respuesta);
     
+       //si el numero ingresado es menor a 10 ponemos nuestra propia excepción
           if (entero <10){
         throw new NoValidNumber(entero);
         } 
         
         }catch(InputMismatchException err){
-            System.out.println("El Entero o El Divisor ingresado no es una variable Numero " + err.getMessage());
+            System.out.println("El Entero o El Divisor ingresado no es un número " + err.getMessage());
         }
     }
     
